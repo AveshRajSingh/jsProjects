@@ -1,0 +1,222 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-track {
+    background: #333;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #666;
+    border-radius: 10px;
+}
+
+html {
+    scrollbar-color: #666 #333;
+}
+
+body {
+    scrollbar-color: #666 #333;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #888;
+}
+
+.main-container {
+    display: flex;
+}
+
+.left-section {
+    position: fixed;
+    width: 25vw;
+    height: 95vh;
+    border: 2px solid white;
+}
+
+.right-section {
+    position: relative;
+    left: 24%;
+    width: 76vw;
+    height: 95vh;
+    border: 2px solid white;
+    overflow-y: scroll;
+}
+
+.nav-container {
+    position: relative;
+    z-index: 99;
+    background-color: rgba(0, 0, 0, 0.566);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    height: 50px;
+    width: 74.5%;
+    padding: 35px 20px;
+    border: 3px solid gray;
+    border-radius: 10px;
+}
+
+.btn-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 20px;
+
+}
+
+.icon-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 20px;
+    background-color: rgba(0, 0, 0, 0.566);
+}
+
+.log-in {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    padding: 15px 5px;
+    border-radius: 7%;
+    height: 100%;
+    width: 15vh;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+}
+
+.left-part1 img {
+    height: 27px;
+    font-size: 26px;
+}
+
+.left-part1 div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.left-part1 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    column-gap: 10vh;
+    min-height: 23vh;
+    padding: 20px 20px;
+}
+
+.left-part2 {
+    max-height: 50vh;
+    overflow-y: scroll;
+
+}
+
+.your-library img {
+    height: 25px;
+}
+
+.your-library {
+    position: fixed;
+    z-index: 100;
+    padding: 0px 15px;
+    width: 22%;
+    height: 30px;
+    display: flex;
+    justify-content: space-between;
+    max-height: 40vh;
+}
+
+.popular-artist-container {
+    background-color: none;
+    position: absolute;
+    top: 13%;
+    height: 40vh;
+    padding: 10px;
+}
+
+.card-container {
+    gap: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 40vh;
+}
+
+.card {
+    border-radius: 10px;
+    position: relative;
+    height: 45vh;
+    width: 30.4vh;
+
+}
+
+.card:hover {
+    background-color: rgb(70, 74, 74);
+}
+
+.card img {
+    padding: 7px 0px 0px 12px;
+    height: 192px;
+    width: 192px;
+    object-fit: cover;
+    border-radius: 10px;
+    background-color: rgba(240, 248, 255, 0);
+}
+
+.card h5 {
+    padding: 7px 0px 10px 12px;
+    font-size: 20px;
+    background-color: rgba(240, 248, 255, 0);
+}
+
+.card h6 {
+    padding: 7px 0px 10px 12px;
+    font-size: 16px;
+    color: aliceblue;
+    background-color: rgba(240, 248, 255, 0);
+}
+
+.playbtn-container {
+    /* background-color: aliceblue; */
+    height: 8vh;
+    width: 100%;
+    gap: 14px;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom: 0;
+}
+
+.playbtn-container i {
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.playbtn-container i:hover {
+    font-size: 29px;
+}
+
+.songList ul {
+    padding: 34px 42px;
+
+
+}
+
+.songList ul li {
+    width: 100%;
+    list-style: none;
+    padding: 10px 10px;
+    border: 2px solid white;
+    margin: 12px;
+}
